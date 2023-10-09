@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background:linear-gradient(to left,#a2df4ae4,#2584dfab);
+    background: linear-gradient(to left, #a2df4ae4, #2584dfab);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,8 +13,8 @@ body {
 
 .container {
     margin: 150px auto;
-    position:relative;
-    
+    position: relative;
+
 }
 
 .clock {
@@ -27,23 +27,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 }
 
-.clock span{
-    position:absolute;
-    transform:rotate(calc(30deg * var(--i))); 
-    inset:10px;
+.clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 10px;
     text-align: center;
 }
 
-.clock span b{
-    transform:rotate(calc(-30deg * var(--i))); 
-    display:inline-block;
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
     font-size: 20px;
 }
 
-.clock::before{
+.clock::before {
     position: absolute;
     content: '';
     width: 8px;
@@ -53,20 +53,17 @@ body {
     background: #fff;
 }
 
-.hand{
-position: absolute;
+.hand {
+    position: absolute;
     display: flex;
     align-items: flex-end;
-    justify-content:center;
+    justify-content: center;
 }
 
-.hand i
-{
+.hand i {
     position: absolute;
     background: var(--cr);
     width: 5px;
     height: var(--h);
     border-radius: 8px;
 }
-
-
